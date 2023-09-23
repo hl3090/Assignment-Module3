@@ -1,0 +1,1239 @@
+
+           MODULE:3.1(C LANGUAGE FUNDAMENTAL)
+
+
+Q.Display This Information using printf
+    1. Your Name
+    2. Your Birth date
+    3. Your Age
+    4. Your Address
+
+
+ Ans.  #include<stdio.h>
+    main()
+  {
+      printf("Hatim");
+      printf("\n2004");
+      printf("\n19");
+      printf("\nSaraspur");
+      return 0;
+  }
+ 
+ Q.WAP to make simple calculator (operation include Addition, Subtraction,Multiplication, Division, modulo)
+Ans.
+   #include<stdio.h>
+main()
+{
+	int a=10,b=15;
+	printf ("%d",a+b);
+	printf ("\n %d",a-b);
+	printf ("\n %d",a*b);
+	printf ("\n %d",a/b);
+}
+
+Q. WAP to find area of circle, rectangle and triangle... 
+
+ Ans.  
+
+      * Area of Rectangle  
+  
+        #include <stdio.h>
+        int main()
+{
+	int breadth=5;
+	int length=10;
+	int area=breadth*length;
+	printf("Area of the rectangle=%d",area);
+}
+
+       * Area of Square
+
+       # include <stdio.h>
+        int main ()
+{
+	int sq=12;
+	int area_square=sq*sq;
+	printf ("Area of the square is=%d",area_square);
+}   
+
+       * Area of circle
+       
+       #include<stdio.h>
+       main()
+{
+	float radius,area;
+	printf("Enter the radius:");
+	scanf("%f",&radius);
+	area=3.14*radius*radius;
+	printf("\n Area of circle is: %f",3.14*radius*radius);
+}
+
+       * Area of triangle  
+
+       #include<stdio.h>
+       main()
+{
+	float base,height,area;
+	printf("Enter the value of base:");
+	scanf("%f",&base);
+	printf("Enter the value of height:");
+	scanf("%f",&height);
+	area=0.5*base*height;
+	printf("Area of triangle is %f:",area);
+}   
+
+Q. WAP to find simple interest 
+Ans.  
+     #include<stdio.h>
+     main()
+{
+	float principle,rate,time;
+	printf("Enter the value of principle:");
+	scanf("%f",&principle);
+	printf("Enter the value of rate:");
+	scanf("%f",&rate);
+	printf("Enter the value of time:");
+	scanf("%f",&time);
+	printf("Enter the value of Simple Interest: %f",principle*rate*time);
+}
+
+Q.Write a program to check a given year is leap year or not.
+Ans.
+    #include <stdio.h>
+     int main() 
+{
+  int year;
+  printf("Enter a year:");
+  scanf("%d", &year);
+  if (year % 4==0)
+    printf("It is a leap year");
+  else
+    printf("\nIt is not a leap year");
+  return 0;
+}
+
+Q. WAP to convert years into days and days into years.. 
+Ans. 
+     #include <stdio.h>
+      int main() 
+{
+    int years, days;
+    printf("Enter number of years: ");
+    scanf("%d", &years);
+    days = years * 365;
+    printf("\n %d years is equal to %d days", years, days);
+
+
+    printf("\n Enter number of days: ");
+    scanf("%d", &days);
+    years = days / 365;
+    printf("\n %d days is equal to %d years", days, years);
+
+    return 0;
+}
+
+       MODULE:3.2 (C LANGUAGE PROGRAMMING WITH C)
+
+Q. WAP to make simple calculator (operation include Addition, Subtraction,
+   Multiplication, Division, modulo) ..
+Ans.
+    #include<stdio.h>
+     main()
+{
+	int x=10;
+// x+=5; // \n x=x+5
+//  x-=8; // \n x=x-8 	
+// x*=50; // \n x=x*50 
+//  x/=20; // \n x=x/20 
+   printf ("%d",x-5);  		  
+}
+
+Q.WAP to swap two numbers without using third variable 
+Ans. #include<stdio.h>
+     main()
+{
+	int a=10,b=20;
+    printf ("10,20");
+    a= 10+20;
+    b= 10-20;
+    a= 10-20;
+    printf("\n20,10");    
+} 
+
+Q. WAP to find number is even or odd using ternary operator 
+Ans. 
+    #include <stdio.h>
+    main() 
+{
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    num % 2 == 0; 
+    printf("The number is even.\n") : printf("The number is odd.\n");
+
+}
+
+
+Q.WAP to show
+   1. Monday to Sunday using switch case
+   2. Vowel or Consonant using switch case 
+
+ Ans.   1.  #include<stdio.h>
+            main()
+  {
+      int day;
+      printf("Enter a day:");
+      scanf("%d",&day);
+      switch(day)
+      {
+        case '1':
+             printf("Monday");
+             break;
+
+        case '2':
+             printf("Tuesday");
+             break;
+
+        case '3':
+             printf("Wednesday");
+             break;
+
+        case '4':
+             printf("Thursday");
+             break;
+
+        case '5':
+             printf("Friday");
+             break;
+
+        case '6':
+             printf("Saturday");
+             break;
+
+        case '7':
+             printf("Sunday");
+             break;
+        default:
+             printf("Invalid Input");
+             
+        return 0;  
+     }
+      
+
+ } 
+
+     2.  #include<stdio.h>
+         main()
+      {
+	char ch;
+	printf("Enter an alphabet:");
+	scanf("%c",&ch);
+	switch(ch)
+	{
+		case 'a':  
+		  printf("Vowel");
+		  break;
+		  
+		case 'e':
+		  printf("Vowel");
+		  break;
+		  
+		case 'i':
+		  printf("Vowel");
+		  break;
+		  
+		case 'o':
+		  printf("Vowel");
+		  break;
+		  
+		case 'u':
+		  printf("Vowel");
+		  break;
+		  
+		default:
+		   printf("Consonant");            
+	}
+       
+ }
+
+
+Q.WAP to check if a person get license or not...
+Ans. 
+    #include<stdio.h>
+    main()
+{
+	int age;
+	printf ("Enter the age:");
+	scanf ("%d",&age);
+	if (age>18) 
+	{
+	   	printf("He will get license");
+	}
+	else 
+	{
+		printf("Will not get license");
+	}
+}
+
+Q. WAP to create a Marksheet...
+
+ Ans.   #include<stdio.h>
+        main()
+{
+	int s1,s2,s3,s4,s5,total;
+	float per;
+	printf("Enter 5 subjects:");
+	scanf("%d %d %d %d %d",&s1,&s2,&s3,&s4,&s5);
+	
+	/* Calculate percentage */
+	per = (s1+s2+s3+s4+s5) / 5.0;
+	printf("\nPercentage = %f:",per);	
+	
+	if (per>=70)
+	{
+		printf("Distinction");
+	}
+	else if (per>=60)
+	{
+		printf("First division");
+	}
+	else if (per>=50)
+	{
+		printf("Second divison");
+	}
+	else if (per>=40)
+	{
+		printf("Last division");
+	}
+	else if (per<=40)
+	{
+		printf("Fail");
+	}
+} 
+
+Q.WAP to check a given number is divisible by 5 and 11 or not...
+Ans. 
+     #include <stdio.h>
+     main() 
+{
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num % 5 == 0 && num % 11 == 0) 
+	{
+        printf("%d is divisible by both 5 and 11.\n", num);
+    } 
+	else 
+	{
+        printf("%d is not divisible by both 5 and 11.\n", num);
+    }
+}
+
+
+Q. WAP to check triangle is equilateral,isoceles or scalence-user input...
+Ans. 
+   #include <stdio.h>
+   main() 
+{
+    int a, b, c;
+
+    printf("Enter the lengths of the three sides of the triangle: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a == b && b == c) 
+{
+        printf("The triangle is equilateral.\n");
+} 
+    else if (a == b || b == c || a == c) 
+{
+        printf("The triangle is isoceles.\n");
+}   
+else 
+{
+        printf("The triangle is scalene.\n")
+}
+ 
+
+
+?PATTERNS:
+  
+ 1. Star Pattern
+                 //Patterns
+                 #include<stdio.h>
+                 int main()
+        {
+	       int row,col,star;
+	       for(row=1;row<=5;row++)
+	 {
+		for(col=row;col<=5;col++)
+		{
+			printf(" ");
+		}
+		for(star=1;star<(row*2);star++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+       }
+
+
+  2.Number Patterns
+
+    ?1-15            #include<stdio.h>
+                     int main()
+             {
+                    int i,j,k;
+                    k=1;
+                    for(i=1;i<10;i++)
+               {
+                    for(j=5;j<=i;j++)
+                 {
+                    printf(" %d ",k++);
+                 }
+                    printf("\n");
+               }
+             }
+
+
+
+    ?10101
+              
+            #include<stdio.h>
+             int main()
+       {
+            int i,j,k;
+            for(i=1;i<=5;i++)
+         {
+            for(j=1;j<=i;j++)
+          {
+            printf("%d",j%2);
+          }
+            printf("\n");
+        }
+      }
+
+
+ 3.Alphabet pattern:
+
+      ?AABBCC        
+                     #include <stdio.h>
+                     int main()
+            {
+                     int i, j;
+                     for(i=1;i<=5;i++)
+                {
+                    for(j=1;j<=i;j++)
+                  {
+                    printf(" %c ",'A' + j-1);
+                  }
+                    printf("\n");
+               }
+            }
+ 
+            
+  
+    ? Looping programs: 
+
+1. WAP to print 972 to 897 using for loop 
+ans.  
+      #include<stdio.h>
+       main()
+{
+	int i;
+	for(i=972;i>=897;i--)
+	{
+		printf("\n %d",i);
+	}
+}
+
+2. WAP to take 10 no. Input from user and find out … 
+ans. 
+      #include <stdio.h>
+       main() 
+{
+    int i;
+    for(i=1;i<=10;i++) 
+	{
+        printf("\n %d",i);
+    }
+}
+
+3 & 4 How many Even and odd numbers are there 
+Ans. 
+    #include <stdio.h>
+     main() 
+{
+    int i, num, even = 0, odd = 0;
+
+    for(i=0;i<10;i++) 
+{
+        printf("Enter number %d:",i+1);
+        scanf("%d", &num);
+
+        if(num % 2 == 0) 
+        {
+            even++;
+        }   
+        else 
+        {
+            odd++;
+        }
+    }
+
+    printf("Number of even numbers: %d\n", even);
+    printf("Number of odd numbers: %d\n", odd);
+}
+
+5 & 6. Sum of even and odd numbers
+Ans. 
+    #include <stdio.h>
+    int main() 
+{
+    int num,i,evensum=0,oddsum=0;
+    printf("Enter a number:");
+	scanf("%d",&num);
+	for(i=1;i<=num;i++)
+	{
+		if (i%2==0)
+		{
+			evensum=evensum+i;
+		}
+		else
+		{
+			oddsum=oddsum+i;
+		}
+		printf("\n evensum=%d",evensum);
+		printf("\n oddsum=%d",oddsum);
+	} 
+}
+
+7. WAP to print table up to given numbers 
+Ans.
+    #include<stdio.h>
+    main()
+{
+	int num,i;
+	printf("Enter a number:");
+	scanf("%d",&num);
+	for(i=1;i<=10;i++)
+	{
+		printf("\n %d * %d =%d",num,i,num*i);
+	}
+}
+
+* WAP to print factorial of given number
+Ans. 
+     #include <stdio.h>
+     main() 
+{
+    int i,num,fact=1;
+
+    printf("Enter a number:");
+    scanf("%d",&num);
+
+    for(i=1;i<=num;i++) 
+	{
+        fact=fact*i;
+    }
+
+    printf("Factorial of %d is: %d\n", num, fact);
+}
+
+
+ Q. WAP to print no. of days in a month using switch case..
+
+ Ans.  #include<stdio.h>
+        main()
+{
+	int month;
+	printf("Enter a number of month:");
+	scanf("%d",&month);
+	switch(month)
+	{
+		case 1:
+			printf("January");
+			break;
+			
+		case 2:
+		    printf("February");
+			break;
+			
+		case 3:
+		    printf("March");
+			break;
+			
+		case 4:
+		    printf("April");
+			break;
+			
+		case 5:
+		    printf("May");
+			break;
+			
+		case 6:
+		    printf("June");
+			break;
+			
+		case 7:
+		    printf("July");
+			break;
+			
+		case 8:
+		    printf("August");
+			break;
+			
+		case 9:
+		    printf("September");
+			break;
+			
+		case 10:
+		    printf("October");
+			break;
+			
+		case 11:
+		    printf("November");
+			break;
+			
+		case 12:
+		    printf("December");
+			break;
+			
+		default:
+		    printf("Enter 1-12 numbers");												
+	}
+}
+
+? Looping programs: 
+1. WAP to print 972 to 897 using for loop 
+ans.  
+      #include<stdio.h>
+       main()
+{
+	int i;
+	for(i=972;i>=897;i--)
+	{
+		printf("\n %d",i);
+	}
+}
+
+2. WAP to take 10 no. Input from user and find out … 
+ans. 
+      #include <stdio.h>
+       main() 
+{
+    int i;
+    for(i=1;i<=10;i++) 
+	{
+        printf("\n %d",i);
+    }
+}
+
+3 & 4 How many Even and odd numbers are there 
+Ans. 
+    #include <stdio.h>
+     main() 
+{
+    int i, num, even = 0, odd = 0;
+
+    for(i=0;i<10;i++) 
+{
+        printf("Enter number %d:",i+1);
+        scanf("%d", &num);
+
+        if(num % 2 == 0) 
+        {
+            even++;
+        }   
+        else 
+        {
+            odd++;
+        }
+    }
+
+    printf("Number of even numbers: %d\n", even);
+    printf("Number of odd numbers: %d\n", odd);
+}
+
+5 & 6. Sum of even and odd numbers
+Ans. 
+    #include <stdio.h>
+    int main() 
+{
+    int num,i,evensum=0,oddsum=0;
+    printf("Enter a number:");
+	scanf("%d",&num);
+	for(i=1;i<=num;i++)
+	{
+		if (i%2==0)
+		{
+			evensum=evensum+i;
+		}
+		else
+		{
+			oddsum=oddsum+i;
+		}
+		printf("\n evensum=%d",evensum);
+		printf("\n oddsum=%d",oddsum);
+	} 
+}
+
+7. WAP to print table up to given numbers 
+Ans.
+    #include<stdio.h>
+    main()
+{
+	int num,i;
+	printf("Enter a number:");
+	scanf("%d",&num);
+	for(i=1;i<=10;i++)
+	{
+		printf("\n %d * %d =%d",num,i,num*i);
+	}
+}
+
+* WAP to print factorial of given number
+Ans. 
+     #include <stdio.h>
+     main() 
+{
+    int i,num,fact=1;
+
+    printf("Enter a number:");
+    scanf("%d",&num);
+
+    for(i=1;i<=num;i++) 
+	{
+        fact=fact*i;
+    }
+
+    printf("Factorial of %d is: %d\n", num, fact);
+}
+ 
+
+Q. WAP to print Fibonacci series up to given numbers 
+Ans.
+     #include<stdio.h>
+      main()
+{
+    int n,i,a,b,c;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    a=0;
+    b=1;
+    for(i=1;i<=n;i++)
+    {
+        printf("%d ",a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+}
+
+
+Q. WAP to print number in reverse order....
+Ans.  
+     #include <stdio.h>
+      main()
+{
+    int num, reversedNum = 0;
+    int i;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    for (i = num; i > 0; i /= 10)
+    {
+        reversedNum = reversedNum * 10 + (i % 10);
+    }
+    printf("Reversed number: %d", reversedNum);
+}
+
+
+Q. Write a program to find out the max from given number (E.g., No: -1562 
+Ans.
+     #include <stdio.h>
+      main()
+{
+    int num, max;
+    int i;
+    printf("Enter the number of elements: ");
+    scanf("%d", &num);
+    int arr[num];
+    printf("Enter the elements: ");
+    for (i = 0; i < num; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    max = arr[0];
+    for (i = 1; i < num; i++)
+    {
+        if (arr[i] > max)
+            max = arr[i];
+    }
+    printf("The maximum number is: %d", max);
+} 
+
+ 
+          MODULE:3.3(FILE HANDLING AND DEBUGGING)
+
+Q. Write a program to find out the max number from given array using function... 
+Ans.
+    #include <stdio.h>
+     int max(int arr[], int n)
+{
+    int i, max;
+    max = arr[0];
+    for (i = 1; i < n; i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+int main()
+{
+    int arr[] = {1,2,58,64,20,15};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printf("The maximum number is %d", max(arr, n));
+}
+
+
+Q. WAP of Addition, Subtraction, Multiplication and Division using Switch case.
+   (Must Be Menu Driven).. 
+Ans.
+     #include <stdio.h>
+int main() {
+    int num1, num2, choice;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    printf("Enter your choice (+, -, *, /): ");
+    scanf(" %c ", &choice);
+    switch (choice) {
+        case '+':
+            printf("Sum = %d\n", num1 + num2);
+            break;
+        case '-':
+            printf("Difference = %d\n", num1 - num2);
+            break;
+        case '*':
+            printf("Product = %d\n", num1 * num2);
+            break;
+        case '/':
+            if (num2 == 0) {
+                printf("Error: division by 0\n");
+            } else {
+                printf("Quotient = %d\n", num1 / num2);
+            }
+            break;
+        default:
+            printf("Invalid choice\n");
+    }
+}
+
+
+Q. WAP to find reverse of string using recursion..
+Ans.
+    #include <stdio.h>
+    void reverseString(char *str, int start, int end)
+{
+    if (start >= end)
+        return;
+    char temp = str[start];
+    str[start] = str[end];
+    str[end] = temp;
+    reverseString(str, start + 1, end - 1);
+}
+int main()
+{
+    char str[100];
+    printf("Enter a string: ");
+    scanf("%s", str);
+    reverseString(str, 0, strlen(str) - 1);
+    printf("Reversed string: %s", str);
+}
+
+
+Q. WAP to find factorial using recursion..
+Ans.
+    #include <stdio.h>
+int factorial(int n) 
+{
+   // Base case: factorial of 0 is 1
+   if (n == 0) 
+   {
+      return 1;
+   }
+   // Recursive case: multiply n with factorial of (n-1)
+   else 
+   {
+      return n * factorial(n - 1);
+   }
+}
+int main() 
+{
+   int num;
+   printf("Enter a positive integer: ");
+   scanf("%d", &num);
+   printf("Factorial of %d = %d", num, factorial(num));
+}
+
+
+Q. WAP to make addition, Subtraction and multiplication of two matrix using 2-D Array 
+Ans. 
+     ADDITON:-
+
+       #include<stdio.h>
+       int main()
+{
+	int a[2][3]={2,6,3,9,8,7};
+	int b[2][3]={5,2,7,3,8,1};
+	int c[2][3];
+	int row,col;
+	printf("---First Matrix---\n");
+	for(row=0;row<=2;row++)
+	{
+		for(col=0;col<=3;col++)
+		{
+			printf("%d",&a[row][col]);
+		}
+		printf("\n");
+	}
+	printf("---Second Matrix---");
+	for(row=0;row<=2;row++)
+	{
+		for(col=0;col<=3;col++)
+		{
+			printf("%d",&b[row][col]);
+		}
+		printf("\n");
+	}
+	printf("---Addition---");
+	for(row=0;row<=2;row++)
+	{
+		for(col=0;col<=3;col++)
+		{
+			c[row][col]=a[row][col] + b[row][col];
+			printf("%d",c[row][col]);
+		}
+		printf("\n");
+	}
+	
+}
+            SUBTRACTION:-
+
+        #include <stdio.h>
+        int main()
+{
+  int a[2][3]={2,6,3,9,8,7};
+  int b[2][3]={5,2,7,3,8,1};
+  int c[2][3];
+  int row,col;
+  printf("---First Matrix---\n");
+  for(row=2;row>=0;row--)
+    {
+      for(col=3;col>0;col--)
+        {
+          printf("%d",a[row][col]);
+        }
+      printf("\n");
+    }
+  printf("---Second Matrix---\n");
+  for(row=2;row>=0;row--)
+    {
+      for(col=3;col>0;col--)
+        {
+          printf("%d",b[row][col]);
+        }
+      printf("\n");
+    }
+  printf("---Subtraction---\n");
+  for(row=2;row>=0;row--)
+    {
+      for(col=3;col>0;col--)  
+      c[2][3]=a[col][row] - b[col][row];
+        {
+          printf("%d",c[row][col]);
+        }
+      printf("\n");
+    }
+}
+       MULTIPLICATION:-
+
+     #include<stdio.h>
+     main()
+{
+	int a[2][3]={2,6,3,9,8};
+	int b[2][3]={5,2,7,3,8};
+	int c[2][3];
+	int r,s,t;
+	printf("Enter First Matrix elements:\n");
+	for(r=0;r<2;r++)
+	{
+		for(s=0;s<2;s++)
+		{
+			scanf("%d",&a[r][s]);
+		}
+	}
+	printf("Enter Second Matrix elements:\n");
+	for(r=0;r<2;r++)
+	{
+		for(s=0;s<2;s++)
+		{
+			scanf("%d",&b[r][s]);
+		}
+	}
+		printf("Multipying both Matrix:\n");
+	    for(r=0;r<2;r++)
+	{
+		for(s=0;s<2;s++)
+		{
+			c[r][s]=0;
+			for(t=0;t<2;t++)
+			{
+				c[r][s]=a[r][t] * b[t][s];
+			}
+		}
+	}
+
+	printf("Displaying Matrix result:\n");
+    for(r=0;r<2;r++)
+    {
+    	for(s=0;s<2;s++)
+    	{
+    		printf("%d",c[r][s]);
+		}
+		printf("\n");
+	}
+}
+
+Q. WAP to take two Array input from user and sort them in ascending or descending order as per user’s choice.
+Ans. 
+     #include <stdio.h>
+    // Function to swap two elements
+    void swap(int *a, int *b) 
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+    // Function to sort array in ascending order
+    void ascendingSort(int arr[], int n) 
+{
+    int i, j;
+    for (i = 0; i < n-1; i++) 
+	{
+        for (j = 0; j < n-i-1; j++) 
+		{
+            if (arr[j] > arr[j+1]) 
+			{
+                swap(&arr[j], &arr[j+1]);
+            }
+        }
+    }
+}
+    // Function to sort array in descending order
+    void descendingSort(int arr[], int n) 
+{
+    int i, j;
+    for (i = 0; i < n-1; i++) 
+	{
+        for (j = 0; j < n-i-1; j++) 
+		{
+            if (arr[j] < arr[j+1]) 
+			{
+                swap(&arr[j], &arr[j+1]);
+            }
+        }
+    }
+}
+    int main() 
+{
+    int size;
+    printf("Enter the size of the arrays: ");
+    scanf("%d", &size);
+    
+    int arr1[size], arr2[size];
+    int i;
+    printf("Enter elements of the array: ");
+    for (i = 0; i < size; i++) 
+	{
+        scanf("%d", &arr1[i]);
+    }
+    
+    int choice;
+    printf("Enter 1 to sort in ascending order or 2 to sort in descending order: ");
+    scanf("%d", &choice);
+    
+    // Sort arrays based on user's choice
+    if (choice == 1) 
+	{
+        ascendingSort(arr1, size);
+    }
+    else if (choice == 2) 
+	{
+        descendingSort(arr1, size);    
+    }
+    else 
+	{
+        printf("Invalid choice!");    
+    }
+    
+    printf("Sorted arrays:\n");
+    printf(" Enter the array: ");
+    for (i = 0; i < size; i++) 
+	{
+        printf("%d ", arr1[i]);
+    }
+    printf("\n");    
+}
+
+
+Q. WAP Find out length of string without using inbuilt function 
+Ans. 
+    #include <stdio.h>
+     main()
+{
+    char str[10];
+    int i = 0;
+    printf("Enter a string: ");
+    scanf("%s", str);
+    while (str[i] != '\0')
+    {
+        i++;
+    }
+    printf("Length of the string: %d", i);
+}
+
+
+Q. WAP to reverse a string and check that the string is palindrome or not... 
+Ans.
+    #include <stdio.h>
+    void reverseString(char *str, int start, int end)
+{
+    if (start >= end)
+        return;
+    char temp = str[start];
+    str[start] = str[end];
+    str[end] = temp;
+    reverseString(str, start + 1, end - 1);
+}
+int is Palindrome(char *str)
+{
+    int len = strlen(str);
+    for (int i = 0; i < len / 2; i++)
+    {
+        if (str[i] != str[len - i - 1])
+            return 0;
+    }
+    return 1;
+}
+int main()
+{
+    char str[100];
+    printf("Enter a string: ");
+    scanf("%s", str);
+    reverseString(str, 0, strlen(str) - 1);
+    printf("Reversed string: %s\n", str);
+    if (isPalindrome(str))
+        printf("The string is a palindrome.\n");
+    else
+        printf("The string is not a palindrome.\n");
+}
+
+
+Q. Write a program of structure employee that provides the following information 
+   -print and display empno, empname, address and age...
+Ans.
+     #include<stdio.h>
+     struct person
+{
+  int id;
+  char name[10];
+  char address[10];
+  float salary;
+};
+int main()
+{
+  struct person p;
+  printf("Enter your id:");
+  scanf("%d",&p.id);
+  printf("Enter your name:");
+  scanf("%s",&p.name);
+  printf("Enter your address:");
+  scanf("%s",&p.address);
+  printf("Enter your salary:");
+  scanf("%f",&p.salary);
+  printf("\n ID=%d",p.id);
+  printf("\n Name=%s",p.name);
+  printf("\n Address=%s",p.address);
+  printf("\n Salary=%f",p.salary);
+   return 0;
+}
+
+Q. Write a program of structure for five employee that provides the following information-
+   print and display empno, empname, address and age.. 
+Ans.
+    include <stdio.h>
+    struct employee 
+{
+    int empno;
+    char empname[10];
+    char address[10];
+    int age;
+};
+    int main()
+{
+    struct employee e;
+    int i;
+    printf("Enter the details of 5 employees:\n");
+    for (i = 0; i < 5; i++)
+      {
+        printf("Enter the id :\n");
+        scanf("%d",&e.empno);
+
+        printf("Enter the emp name :\n");
+        scanf("%s",&e.empname);
+
+        printf("Enter the emp add :\n");
+        scanf("%s",&e.address);
+
+        printf("Enter the age :\n");
+        scanf("%d",&e.age);
+       
+    }
+    printf("The details of 5 employees are:\n");
+    for (i = 0; i < 5; i++) 
+    {
+       printf("\n the id :%d",e.empno);
+      printf("\nthe emp name :%s",e.empname);
+      printf("\n the emp add :%s",e.address);
+      printf("\nthe age :%d",e.age);
+    }
+    return 0;
+}
+
+Q. WAP to show difference between Structure and Union...  
+Ans. Structure and union are two important data types in C programming language. Both of them are used to group together related data items. However, there are some key differences between them.
+A structure is a collection of data items of different types, which are grouped together under a single name. Each data item in a structure is called a member. The members of a structure can be of any type, including other structures.
+A union is also a collection of data items of different types, which are grouped together under a single name. However, unlike a structure, the members of a union share the same memory location. This means that only one member of a union can be accessed at a time.
+Here is a table summarizing the key differences between structures and unions:
+| Feature | Structure | Union |
+|---|---|---|
+| Data type | Collection of data items of different types | Collection of data items of different types |
+| Members | Can be of any type, including other structures | Share the same memory location |
+| Access | Each member can be accessed individually | Only one member can be accessed at a time |
+
+
+
+
+
+
+
+
+
+
